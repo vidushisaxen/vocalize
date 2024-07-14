@@ -99,7 +99,7 @@ function Header() {
             <Link href="/contact">
             <div className="headerButton">
               <button className="bg-[#88038F] text-white text-[1vw] px-[1vw] py-[0.5vw] btn-anim relative overflow-hidden z-[1]">
-                Let's Connect
+                Let Connect
               </button>
             </div>
             </Link>
