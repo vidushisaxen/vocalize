@@ -96,13 +96,11 @@ function Header() {
                 <span className="headerToggle2 absolute bg-white h-[1px] w-[40%] top-[2vw]"></span>
               </div>
             </div>
-            <Link href="/contact">
             <div className="headerButton">
               <button className="bg-[#88038F] text-white text-[1vw] px-[1vw] py-[0.5vw] btn-anim relative overflow-hidden z-[1]">
                 Let Connect
               </button>
             </div>
-            </Link>
           </div>
           </div>
         

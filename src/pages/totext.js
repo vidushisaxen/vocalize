@@ -1,16 +1,16 @@
-import Chatbot from '@/components/Chatbot'
+import TextToSpeech from '@/components/convert/TextToSpeech'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import React from 'react'
 
-const chatbot = () => {
+const totext = () => {
   return (
     <>
     <Header/>
-    <Chatbot/>
+    <TextToSpeech/>
     <Footer/>
     </>
   )
 }
 
-export default chatbot
+export default totext
