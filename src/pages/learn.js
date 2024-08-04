@@ -1,13 +1,15 @@
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import React from 'react'
+import Link from 'next/link'
+import Learn from '../components/learning/Learn'
 
 const learn = () => {
   return (
    <>
    <section className='learnContainer'>
     <Header/>
-    <h1>Learn</h1>
+   <Learn/>
     <Footer/>
 
    </section>

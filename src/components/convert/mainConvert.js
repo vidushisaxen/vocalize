@@ -11,7 +11,7 @@ const MainConvert = () => {
             <div class="conversion-wrapper">
               <img src="/images/speech2.png" class="conversion-cover-image" />
             </div>
-            <Link href="/totext">
+            <Link href="">
               <h2 className="conversion-title">SPEECH</h2>
               </Link>
             <img src="/images/speech3.png" class="conversion-character" />
@@ -20,7 +20,7 @@ const MainConvert = () => {
             <div class="conversion-wrapper">
               <img src="/images/text2.jpg" class="conversion-cover-image" />
             </div>
-            <Link href="/tospeech">
+            <Link href="/">
             <h2 className="conversion-title">TEXT</h2>
             </Link>
             <img src="/images/text1.png" class="conversion-character" id="text" />

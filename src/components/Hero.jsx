@@ -4,8 +4,8 @@ const Hero = () => {
   return (
    <>
    <section classname=" hero-container h-screen w-screen">
-    <div className='h-full w-full'>
-        <img src='/images/hero.jpg' alt='hero-img'/>
+    <div className='h-screen w-screen'>
+        <img src='/images/hero.jpg' alt='hero-img' className='w-screen h-screen'/>
     </div>
 
    </section>

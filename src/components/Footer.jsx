@@ -7,22 +7,6 @@ const Footer = () => {
     <>
     <section>
     <div className="footer-container">
-        <div className="top-footer">
-          <div className="footer-logo">
-            <img src="/icons/favicon.svg"  alt="icon"/>
-          </div>
-          <div className="footer-contact">
-            <p>
-              +44(0)333 090 7275
-              <span className="block footer-border"></span>
-            </p>
-
-            <p>
-              enquiries@speakic.com
-              <span className="block footer-border"></span>
-            </p>
-          </div>
-        </div>
         <hr></hr>
         <div className="bottom-footer">
           <div className="left-text">

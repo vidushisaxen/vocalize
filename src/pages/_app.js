@@ -2,6 +2,9 @@ import "@/styles/globals.css";
 import '@/styles/login.css';
 import '@/styles/translate.css'
 import '@/styles/chatbot.css'
+import '@/styles/about.css'
+import '@/styles/blogs.css'
+import '@/styles/contact.css'
 
 import { ReactLenis, useLenis } from '@studio-freight/react-lenis'
 import Head from "next/head";
