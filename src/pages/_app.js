@@ -1,4 +1,4 @@
-import "@/styles/globals.css";
+import '@/styles/globals.css';
 import '@/styles/login.css';
 import '@/styles/translate.css'
 import '@/styles/chatbot.css'

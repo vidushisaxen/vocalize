@@ -1,4 +1,10 @@
 import React from 'react';
+import { FaLocationDot } from "react-icons/fa6";
+import { MdMessage } from "react-icons/md";
+import { IoCall } from "react-icons/io5";
+import { FaLinkedin } from "react-icons/fa6";
+import { TbSquareLetterVFilled } from "react-icons/tb";
+import { TbSquareLetterSFilled } from "react-icons/tb";
 
 const Contact = () => {
   return (
@@ -10,22 +16,21 @@ const Contact = () => {
         <div class="contact-info">
           <h3 class="title">Let's get in touch</h3>
           <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum adipisci recusandae praesentium dicta!
+            For any queries, help and suggestions, do ping us once. We will we more than happy to help.
           </p>
 
           <div class="info">
             <div class="information">
-              <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
+              <i class="fas"><FaLocationDot /></i> 
 
-              <p>92 Cherry Drive Uniondale, NY 11553</p>
+              <p>Ayodhya, Uttar Pradesh , India</p>
             </div>
             <div class="information">
-              <i class="fas fa-envelope"></i> &nbsp &nbsp
-              <p>lorem@ipsum.com</p>
+              <i class="fas "><MdMessage /></i>
+              <p>speakic@gmail.com</p>
             </div>
             <div class="information">
-              <i class="fas fa-phone"></i>&nbsp&nbsp
+              <i class="fas"><IoCall /></i>
               <p>123-456-789</p>
             </div>
           </div>
@@ -33,17 +38,20 @@ const Contact = () => {
           <div class="social-media">
             <p>Connect with us :</p>
             <div class="social-icons">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
+              <a href="https://www.linkedin.com/in/vidushi-saxena-071786228/">
+                <i class="fab">
+                <FaLinkedin />
+                </i>
+              </a>
+              <a href="https://vidushisaxena.netlify.app/">
+                <i class="fab">
+                <TbSquareLetterVFilled />
+                </i>
               </a>
               <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
+                <i class="fab">
+                <TbSquareLetterSFilled />
+                </i>
               </a>
             </div>
           </div>
