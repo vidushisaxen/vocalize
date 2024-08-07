@@ -1,6 +1,6 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import Translate from '@/components/translate/Translate'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
+import Translate from '../components/translate/Translate'
 import React from 'react'
 
 const translate = () => {
