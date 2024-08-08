@@ -17,12 +17,12 @@
   
   .wrapper {
     border-radius: 5px;
-    border: 2px solid #033431;
+    border: 2px solid #88038F;
   }
   
   .wrapper .text-input {
     display: flex;
-    border-bottom: 2px solid #033431;
+    border-bottom: 2px solid #88038F;
   }
   .text-input{
     display: flex;
@@ -30,7 +30,7 @@
   
   .text-input .to-text {
     border-radius: 0px;
-    border-left: 2px solid #033431;
+    border-left: 2px solid #88038F;
   }
   
   .text-input textarea {
@@ -46,11 +46,11 @@
   }
   
   .text-input textarea::-moz-placeholder {
-    color: #033431;
+    color: #88038F;
   }
   
   .text-input textarea::placeholder {
-    color: #033431;
+    color: #88038F;
   }
   
   .controls,
@@ -73,7 +73,7 @@
   
   .controls .row .icons i {
     width: 50px;
-    color: #033431;
+    color: #88038F;
     font-size: 14px;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -91,7 +91,7 @@
   }
   
   .controls .row select {
-    color: #033431;
+    color: #88038F;
     border: none;
     outline: none;
     font-size: 18px;
@@ -124,7 +124,7 @@
   }
   
   .controls .exchange {
-    color: #033431;
+    color: #88038F;
     cursor: pointer;
     font-size: 16px;
     transition: transform 0.2s ease;
@@ -144,5 +144,5 @@
     margin-top: 20px;
     font-size: 17px;
     border-radius: 5px;
-    background: #033431;
+    background: #88038F;
   }/*# sourceMappingURL=translations.css.map */
