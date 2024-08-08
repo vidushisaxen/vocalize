@@ -28,10 +28,10 @@ const TranslateHero = () => {
                 </p>
               </div>
 
-              <div className="absolute w-[61%] right-0 bottom-[5%]">
+              <div className="absolute w-[100%] right-0 bottom-[5%]">
                 <Image
                   className="hero-img"
-                  src="/images/contact-hero.jpg"
+                  src="/images/translation-hero.webp"
                   alt="Hero Image"
                   width= {1000}
                   height= {1000}

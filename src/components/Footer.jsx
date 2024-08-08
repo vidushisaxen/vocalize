@@ -147,12 +147,12 @@ const Footer = () => {
                 <li>
                   <span className="leading-[3vw] overflow-hidden nav-footer-link">
                     <span className="overflow-hidden flex flex-col gap-[0.8vw] h-[200%] -translate-y-1/2">
-                      <a href="#" className="fname">
+                      <Link href="https://vidushisaxena.netlify.app/" className="fname">
                         Vidushi Saxena
-                      </a>
-                      <a href="#" className="sname">
+                      </Link>
+                      <Link href="https://vidushisaxena.netlify.app/" className="sname">
                         Vidushi Saxena
-                      </a>
+                      </Link>
                     </span>
                   </span>
                 </li>
