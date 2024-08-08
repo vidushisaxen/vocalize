@@ -44,7 +44,7 @@ function Header() {
                       Blogs
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/login"
                       className="text-[#363636] hover:text-[#fff] transition-all duration-500"
@@ -52,7 +52,7 @@ function Header() {
                       Login
                     </Link>
                   </li>
-                  
+                   */}
                 </ul>
             </div>
             <Link href="/contact">

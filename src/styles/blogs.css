@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
- @import url('https://fonts.googleapis.com/css?family=Lato');
 
-*{
-  padding:0;
-  margin:0;
-  box-sizing:border-box;
-}
-
-body{
-  background-image:url("https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg");
-}
 .wrap{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -32,22 +21,25 @@ body{
   will-change: transform;
 }
 
-.article:nth-child(5n+1){
-    background-image:url("https://images.unsplash.com/photo-1446776877081-d282a0f896e2?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.article1{
+    background-image:url("https://aiworldschool.com/wp-content/uploads/2021/03/AI-for-LanguageLearning.png");
 }
 
-.article:nth-child(5n+2){
-    background-image:url("https://images.unsplash.com/photo-1518364538800-6bae3c2ea0f2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.article2{
+    background-image:url("https://i.pcmag.com/imagery/roundups/04R6IMsZbPKOGtR1G7U4ne2-2..v1651688497.webp");
 }
-.article:nth-child(5n+3){
-  background-image:url("https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.article3{
+  background-image:url("https://verbit.ai/wp-content/uploads/2023/08/shutterstock_1317865808-1024x683.jpg");
 }
 
-.article:nth-child(5n+4){
-  background-image:url("https://images.unsplash.com/photo-1614121181207-4b6c334d353d?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.article4{
+  background-image:url("https://www.transifex.com/wp-content/uploads/2022/08/Neural-Machine-Translation-featured.png");
 }
-.article:nth-child(5n+5){
-  background-image:url("https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+.article5{
+  background-image:url("https://polyglotpal.co.uk/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-15-13.19.48-Illustration-of-a-brain-split-into-two-sections.-One-section-is-labeled-Language-Learning-and-has-symbols-of-books-charts-and-headphones.-The-othe-1024x585.png");
+}
+.article6{
+  background-image: url("https://media.licdn.com/dms/image/D5612AQHDzlYOpd2EBA/article-cover_image-shrink_720_1280/0/1709727453569?e=2147483647&v=beta&t=bC1qdgwQAL7oeBFALZKoI5u5sb939iO0rRTzIf0gENs");
 }
 
 
@@ -62,7 +54,6 @@ body{
 }
 .article h1{
   font-size:1.5em;
-  font-family:'Oswald';
   margin-top:auto;
   cursor:pointer;
   transition:all 0.3s;
@@ -81,7 +72,6 @@ body{
 .article span.cat {
   letter-spacing:2px;
   font-weight:bold;
-  font-family: 'Lato', sans-serif;
   position:relative;
   z-index:2;
   pointer-events:none;

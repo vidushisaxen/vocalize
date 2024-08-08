@@ -7,7 +7,7 @@ const tospeech = () => {
   return (
    <>
    <Header/>
-   <ToSpeech/>
+   {/* <ToSpeech/> */}
    <Footer/>
    </>
   )

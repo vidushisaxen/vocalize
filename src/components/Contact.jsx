@@ -11,10 +11,9 @@ const Contact = () => {
     <>
     <div class="container">
       <span class="big-circle"></span>
-      <img src="img/shape.png" class="square" alt="" />
       <div class="form">
         <div class="contact-info">
-          <h3 class="title">Let's get in touch</h3>
+          <h3 class="title">Let&apos;s get in touch</h3>
           <p class="text">
             For any queries, help and suggestions, do ping us once. We will we more than happy to help.
           </p>
@@ -64,26 +63,19 @@ const Contact = () => {
           <form action="index.html" autocomplete="off">
             <h3 class="title">Contact us</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
-              <label for="">Username</label>
-              <span>Username</span>
+              <input type="text" name="name" class="input" placeholder='Username'/>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
-              <label for="">Email</label>
-              <span>Email</span>
+              <input type="email" name="email" class="input"  placeholder='Email'/>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" />
-              <label for="">Phone</label>
-              <span>Phone</span>
+              <input type="tel" name="phone" class="input"  placeholder='Phone No.'/>
             </div>
             <div class="input-container textarea">
-              <textarea name="message" class="input"></textarea>
-              <label for="">Message</label>
-              <span>Message</span>
+              <textarea name="message" class="input" placeholder='Message'></textarea>
+             
             </div>
-            <input type="submit" value="Send" class="btn" />
+            <p><a href="mailto:vidushisaxenabdn786@gmail.com " className='btn'>Send email</a></p>
           </form>
         </div>
       </div>

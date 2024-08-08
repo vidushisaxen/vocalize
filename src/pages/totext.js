@@ -7,7 +7,7 @@ const totext = () => {
   return (
     <>
     <Header/>
-    <TextToSpeech/>
+    {/* <TextToSpeech/> */}
     <Footer/>
     </>
   )

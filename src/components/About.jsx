@@ -7,88 +7,38 @@ const About = () => {
         <div class="jumbotron">
             <div class="jumbotron-inner">
                 <div class="top-box">
-                    <div class="content-box">
-                        <h1>
-                            About APIMATIC
+                    <div class="content-box ">
+                        <h1 className='mt-[10%]'>
+                            About SPEAKIC
                         </h1>
                         <p>
-                            APIMatic is a developer experience platform for web APIs.  <br /> Our mission is to make developers productive through automatic code generation.
+                        Welcome to Speakic, your ultimate language learning companion! At Speakic, we are dedicated to helping learners master new languages with ease and efficiency. Our platform offers a comprehensive suite of features designed to enhance your learning experience, including text-to-speech and speech-to-text conversion, as well as seamless translation between multiple languages. Whether you are a beginner taking your first steps in a new language or an advanced learner looking to polish your skills, Speakic provides the tools and resources you need to succeed. Join us on this linguistic journey and unlock the doors to new cultures and opportunities with Speakic.
+                        </p>
+                        <p>
+                        At Speakic, we understand that language learning is more than just memorizing vocabulary and grammar rules; it&apos;s about effective communication and cultural immersion. That&apos;s why our platform is designed with interactive features and user-friendly interfaces that make learning both engaging and enjoyable. Our state-of-the-art technology ensures accurate and natural-sounding text-to-speech outputs, while our advanced speech-to-text algorithms provide precise transcription to help you improve your pronunciation and fluency. With a vast library of languages and dialects, real-time translation capabilities, and personalized learning paths, Speakic empowers you to achieve your language goals at your own pace. Join our vibrant community of learners and experience the world of languages like never before!
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="img-layer-container">
-                <div class="team-image" id="team-image">
-                    <img src="https://apimatic.io/img/theme/aboutUs/images-1.png" />
-                </div>
-
-                <div class="circles-container">
-                    <div class="img-1">
-                        <img src="https://apimatic.io/img/theme/aboutUs/Circles-1-1.svg" />                        
-                    </div>
-                    <div class="img-2">
-                        <img src="https://apimatic.io/img/theme/aboutUs/Circles-2-1.svg" />                        
-                    </div>                    
-                </div>           
-            </div>
         </div>
-        <div class="story-container">
-            <div class="need-for-dx-container">
-                <h3 class="text-center">
-                    Need for DX
-                </h3>
-                <p>
-                    Application Programming Interfaces (APIs) have taken the world by storm and are now the de facto standard of software communication. Almost every software product nowadays consumes APIs. The business model of numerous companies around the world relies upon the consumption of their APIs. API providers, therefore, strive to increase API adoption rates by spending millions of dollars every year to improve developer experience. This is usually done by providing Software Development Kits (SDKs) and API documentation to developer consuming their API(s). Developing SDKs and writing documentation, however, are arduous, monotonous and error-prone tasks. It is a slow process and costs a lot of time and money.
-                </p>
-                <div class="img-container">
-                    <img src="https://apimatic.io/img/theme/aboutUs/dxFlow.svg" alt="apimatic developer experience process" class="img-responsive"/>
+    </div> 
+    <div id="about-main">
+        <div class="jumbotron">
+            <div class="jumbotron-inner">
+                <div class="top-box">
+                    <div class="content-box ">
+                        <h1 className='mt-[10%]'>
+                        Meet the Dynamic Team Behind Speakic
+                        </h1>
+                        <p>
+                        At Speakic, our team is the heartbeat of our innovation. Shivanshika Agarwal, our skilled Frontend Developer, brings a wealth of expertise in crafting intuitive and engaging user interfaces. Her technical proficiency ensures that our platform is not only functional but also visually stunning. Complementing her skills is Vidushi Saxena, our Creative Frontend Developer, whose artistic vision and innovative approach breathe life into every design. Together, Shivanshika and Vidushi combine their talents to create seamless, user-friendly experiences that set Speakic apart. Their dedication and creativity drive our mission to revolutionize global communication.
+                        </p>
+                        <p>
+                        Shivanshika and Vidushi&apos;s collaborative synergy is at the core of Speakic&apos;s success. Shivanshika excels in translating complex requirements into clean, efficient code, ensuring our platform is robust and reliable. Her attention to detail guarantees a smooth and responsive user experience. On the other hand, Vidushi&apos;s creative flair infuses our platform with unique design elements that captivate and engage users. Her ability to blend functionality with aesthetics enhances the overall user journey. Together, they leverage their complementary skills to push the boundaries of what&apos;s possible, continuously innovating to meet the evolving needs of our global audience.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="container-divider"></div>
-            <div class="our-tech-container">
-                <h3 class="text-center">
-                    Our Technology
-                </h3>
-                <p>
-                    Our code generation engine enables API providers to generate SDKs for their APIs within minutes and at a fraction of the cost. We provide tools like our API editor and API transformer to further aid API providers in minimizing the time required to ship excellent quality SDKs to the developers using their APIs. Our code generation engine is also capable of generating succinct and error-free documentation for APIs and SDKs, both. The documentation for the SDKs includes dynamic screenshots detailing usage instructions tailored to the provider's specific API and also code snippets showing example usage. As the cherry on the cake, we provide beautifully designed DX portals to encapsulate this documentation.
-                </p>
-                <div class="img-container">
-                    <img src="https://apimatic.io/img/theme/cgaasIcons/cgaasProcess.gif" alt="apimatic code generation engine" class="img-responsive"/>
-                </div>
-            </div>
-            <div class="container-divider"></div>
-            <div class="origin-story-container">
-                <h3 class="text-center">
-                    Origin Story
-                </h3>
-                <p>
-                    While doing research work for their PhDs from the University of Auckland in 2014, our founders came across one of the API industry's pain points: SDKs. They realized that API providers who spent hundreds of thousands of dollars every year on improving developer experience, by providing SDKs and user-friendly documentation were able to reach a wider developer audience for their APIs compared to API providers who weren't able to do so.
-                </p>
-                <p>
-                    It was so clear that even though writing SDKs and documentation was a difficult and expensive task, it followed repeatable patterns which could be defined as logic blocks in a code generation engine. So, as a research project, they started working on a code generation engine which dynamically generated SDKs using API description as input.
-                </p>
-                <p>
-                    After a rigorous journey, this research project was selected as a candidate for commercialization by Return on Science (a NZ national research commercialization program focused on bringing new academic research to market) and the concept was transformed into a product i.e. APIMatic.
-                </p>
-            </div>
-            <div class="container-divider"></div>
-            <div class="today-container">
-                <h3 class="text-center">
-                    Flash Forward Today
-                </h3>
-                <p>
-                    APIMatic has come a long way since its inception 3 years ago. Having started with only generating SDKs, APIMatic now provides solutions in other areas of developer experience as well. Presently, APIMatic is used by numerous organizations around the world to:
-                </p>
-                <ul>
-                    <li>Create and store definitions of their APIs</li>
-                    <li>Generate SDKs for their APIs for 10 platforms</li>
-                    <li>Keep these SDKs in sync with API updates</li>
-                    <li>Convert API descriptions into multiple formats (Swagger, API Blueprint, RAML etc.)</li>
-                    <li>Generate beautiful documentation for their APIs and SDKs</li>
-                    <li>Generate complete Developer Experience API Portals</li>
-                </ul>
-            </div>
-            <div class="container-divider"></div>
         </div>
     </div>  
     </>

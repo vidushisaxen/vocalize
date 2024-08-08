@@ -1,6 +1,13 @@
 @tailwind base;
   @tailwind components;
   @tailwind utilities;
+@import url('./about.css');
+@import url('./blogs.css');
+@import url('./chatbot.css');
+@import url('./contact.css');
+@import url('./login.css');
+@import url('./terms.css');
+@import url('./translate.css');
 
   :root{
     --primary: "#88038F";
@@ -355,6 +362,64 @@
     transition: all 0.5s ease;
     /* transform-origin: left; */
   }
+
+  /*Blogs*/
+  .title-1{
+    font-size: 4vw;
+    font-weight: 300;
+    line-height: 1.05;
+  }
+  .content-p{
+    color: var(--p-text-color);
+    font-weight: 300;
+    font-size: 1.15vw;
+    line-height: 1.5;
+  }
+  .main-gradient {
+    background: linear-gradient(106.7DEG, #EEDDEB 0, #97a5f5 100%);
+    background-size: 300% 300%;
+    -webkit-animation: gradient 10s ease infinite;
+    -moz-animation: gradient 10s ease infinite;
+    -o-animation: gradient 10s ease infinite;
+    animation: gradient 10s ease infinite;
+  }
   
+  @-webkit-keyframes gradient {
+    0%{background-position:0% 33%}
+    50%{background-position:100% 68%}
+    100%{background-position:0% 33%}
+  }
+  @-moz-keyframes gradient {
+    0%{background-position:0% 33%}
+    50%{background-position:100% 68%}
+    100%{background-position:0% 33%}
+  }
+  @-o-keyframes gradient {
+    0%{background-position:0% 33%}
+    50%{background-position:100% 68%}
+    100%{background-position:0% 33%}
+  }
+  @keyframes gradient {
+    0%{background-position:0% 33%}
+    50%{background-position:100% 68%}
+    100%{background-position:0% 33%}
+  }
+    .hero-img{
+      border-radius: 50%;
+      height: 30vw;
+      width: 30vw;
+      position: absolute;
+      right: 5%;
+      bottom:10%;
+    }
+  
+    .hero-container{
+      background-image: url('/images/hero-bg2.webp');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 8%;
+      border-radius: 3vw;
+    }
   
   

@@ -11,13 +11,19 @@ const TextToSpeech = ({ text }) => {
   useEffect(() => {
     const synth = window.speechSynthesis;
     const u = new SpeechSynthesisUtterance(text);
-    const voices = synth.getVoices();
-
     setUtterance(u);
-    setVoice(voices[0]);
+
+    // Add an event listener to the speechSynthesis object to listen for the voiceschanged event
+    synth.addEventListener("voiceschanged", () => {
+      const voices = synth.getVoices();
+      setVoice(voices[0]);
+    });
 
     return () => {
       synth.cancel();
+      synth.removeEventListener("voiceschanged", () => {
+        setVoice(null);
+      });
     };
   }, [text]);
 
@@ -39,18 +45,14 @@ const TextToSpeech = ({ text }) => {
 
   const handlePause = () => {
     const synth = window.speechSynthesis;
-
-    synth.pause();
-
     setIsPaused(true);
+    synth.pause();
   };
 
   const handleStop = () => {
     const synth = window.speechSynthesis;
-
-    synth.cancel();
-
     setIsPaused(false);
+    synth.cancel();
   };
 
   const handleVoiceChange = (event) => {
@@ -71,79 +73,65 @@ const TextToSpeech = ({ text }) => {
   };
 
   return (
-    <>
-      <div className="my-7 grid grid-cols-4 gap-5 lg:grid-cols-4  md:grid-cols-2 sm:grid-cols-1">
-        <label>
-          Voice:
-          <select value={voice?.name} onChange={handleVoiceChange}>
-            {window.speechSynthesis.getVoices().map((voice) => (
-              <option key={voice.name} value={voice.name}>
-                {voice.name}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label>
-          Pitch:
-          <input
-            type="range"
-            min="0.5"
-            max="2"
-            step="0.1"
-            value={pitch}
-            onChange={handlePitchChange}
-          />
-        </label>
-        <label>
-          Speed:
-          <input
-            type="range"
-            min="0.5"
-            max="2"
-            step="0.1"
-            value={rate}
-            onChange={handleRateChange}
-          />
-        </label>
-        <label>
-          Volume:
-          <input
-            type="range"
-            min="0"
-            max="1"
-            step="0.1"
-            value={volume}
-            onChange={handleVolumeChange}
-          />
-        </label>
-      </div>
-      <div className="control-pannel">
-        <button onClick={handlePlay}>
-          <lord-icon
-            src="https://cdn.lordicon.com/becebamh.json"
-            trigger="hover"
-            colors="primary:#033431"
-          ></lord-icon>
-        </button>
-        <button onClick={handlePause}>
-          <lord-icon
-            src="https://cdn.lordicon.com/jctchmfs.json"
-            trigger="hover"
-            colors="primary:#033431"
-          ></lord-icon>
-        </button>
-        <button onClick={handleStop}>
-          <lord-icon
-            src="https://cdn.lordicon.com/ogkflacg.json"
-            trigger="hover"
-            colors="primary:#033431"
-          ></lord-icon>
-        </button>
-      </div>
-    </>
+    <div>
+      <label>
+        Voice:
+        <select value={voice?.name} onChange={handleVoiceChange}>
+          {window.speechSynthesis.getVoices().map((voice) => (
+            <option key={voice.name} value={voice.name}>
+              {voice.name}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      <br />
+
+      <label>
+        Pitch:
+        <input
+          type="range"
+          min="0.5"
+          max="2"
+          step="0.1"
+          value={pitch}
+          onChange={handlePitchChange}
+        />
+      </label>
+
+      <br />
+
+      <label>
+        Speed:
+        <input
+          type="range"
+          min="0.5"
+          max="2"
+          step="0.1"
+          value={rate}
+          onChange={handleRateChange}
+        />
+      </label>
+      <br />
+      <label>
+        Volume:
+        <input
+          type="range"
+          min="0"
+          max="1"
+          step="0.1"
+          value={volume}
+          onChange={handleVolumeChange}
+        />
+      </label>
+
+      <br />
+
+      <button onClick={handlePlay}>{isPaused ? "Resume" : "Play"}</button>
+      <button onClick={handlePause}>Pause</button>
+      <button onClick={handleStop}>Stop</button>
+    </div>
   );
 };
-
-
 
 export default TextToSpeech;
