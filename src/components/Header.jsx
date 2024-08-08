@@ -17,7 +17,7 @@ function Header() {
         <div className="flex items-center justify-between">
           <div className="flex items-center ">
             <img src="/icons/favicon.svg" alt="icon" height="35" width="35"/>
-            <Link href="#">
+            <Link href="/">
             <h2 className="text-[1.2vw] text-[#363636] ml-[1vw] font-medium" >Speakic</h2>
             </Link>
           </div>
@@ -25,13 +25,13 @@ function Header() {
             <div className="headerLinks flex">
                 <ul className="flex items-center space-x-[4vw]  text-[1.2vw] font-medium headerInnerLinks">
                   <li>
-                    <Link href="#" className="text-[#363636] hover:text-[#fff] transition-all duration-500">
+                    <Link href="/" className="text-[#363636]  transition-all duration-500">
                       Home
                     </Link>
                   </li>
                   <li>
                     <Link href="/about"
-                      className="text-[#363636] hover:text-[#fff] transition-all duration-500"
+                      className="text-[#363636]  transition-all duration-500"
                     >
                       About us
                     </Link>
@@ -39,7 +39,7 @@ function Header() {
                   <li>
                     <Link
                       href="/blogs"
-                      className="text-[#363636] hover:text-[#fff] transition-all duration-500"
+                      className="text-[#363636]  transition-all duration-500"
                     >
                       Blogs
                     </Link>
@@ -47,7 +47,7 @@ function Header() {
                   {/* <li>
                     <Link
                       href="/login"
-                      className="text-[#363636] hover:text-[#fff] transition-all duration-500"
+                      className="text-[#363636]  transition-all duration-500"
                     >
                       Login
                     </Link>
