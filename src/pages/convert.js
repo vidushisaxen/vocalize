@@ -8,7 +8,7 @@ const convert = () => {
    <>
    <section className='convertContainer'>
     <Header/>
-    <MainConvert/>
+    {/* <MainConvert/> */}
     <Footer/>
 
    </section>

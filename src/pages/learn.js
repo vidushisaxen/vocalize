@@ -9,7 +9,7 @@ const learn = () => {
    <>
    <section className='learnContainer'>
     <Header/>
-   <Learn/>
+   {/* <Learn/> */}
     <Footer/>
 
    </section>

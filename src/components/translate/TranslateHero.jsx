@@ -23,7 +23,7 @@ const TranslateHero = () => {
                 </h1>
                 <p className=" max-w-[30vw] mt-[4vw] mb-[4vw] content-p">
                   <span>
-                  We&atos;d love to hear from you! Whether you have questions, feedback, or need support, our team at Speakic is here to assist you. Reach out to us through the contact form below, or connect with us via email, phone, or social media. 
+                  At Speakic, our translation services are designed to bridge language gaps and connect cultures effortlessly. With a team dedicated to excellence, we ensure that every translation is not only accurate but also contextually relevant.
                   </span>
                 </p>
               </div>
