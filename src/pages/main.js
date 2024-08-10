@@ -12,8 +12,8 @@ import React from 'react'
 const main = () => {
   return (
     <>
-    <main>
     <Header/>
+    <main>
     <Hero/>
     <Main/>
     <Info/>
@@ -21,8 +21,8 @@ const main = () => {
     <WhyUs/>
     <Join/>
     <Faq/>
-    <Footer/>
     </main>
+    <Footer/>
     
     </>
   )

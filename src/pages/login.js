@@ -6,12 +6,11 @@ import React from 'react'
 const login = () => {
   return (
    <>
-   <section className='loginContainer'>
     <Header/>
+    <main>
     <Login/>
+    </main>
     <Footer/>
-
-   </section>
    </>
   )
 }

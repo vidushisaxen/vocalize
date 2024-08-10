@@ -1,24 +1,24 @@
 import React, { useEffect } from "react";
-import countries from '../../js/data'
-
+import countries from '../../js/data';
 
 const Translate = () => {
   useEffect(() => {
     const fromText = document.querySelector(".from-text");
     const toText = document.querySelector(".to-text");
-    const exhchangeIcon = document.querySelector(".exchange");
+    const exchangeIcon = document.querySelector(".exchange i");
     const selectTag = document.querySelectorAll("select");
     const icons = document.querySelectorAll(".row i");
-    const translateBtn = document.querySelector("button");
+    const translateBtn = document.querySelector(".translateBtn");
 
+    // Populate the language dropdowns
     selectTag.forEach((tag, id) => {
       for (let country_code in countries) {
         let selected =
-          id == 0
-            ? country_code == "en-GB"
+          id === 0
+            ? country_code === "en-GB"
               ? "selected"
               : ""
-            : country_code == "hi-IN"
+            : country_code === "hi-IN"
             ? "selected"
             : "";
         let option = `<option ${selected} value="${country_code}">${countries[country_code]}</option>`;
@@ -26,7 +26,8 @@ const Translate = () => {
       }
     });
 
-    exhchangeIcon.addEventListener("click", () => {
+    // Swap languages when exchange icon is clicked
+    exchangeIcon.addEventListener("click", () => {
       let tempText = fromText.value;
       let tempLang = selectTag[0].value;
       fromText.value = toText.value;
@@ -35,12 +36,14 @@ const Translate = () => {
       selectTag[1].value = tempLang;
     });
 
+    // Clear translation when fromText is empty
     fromText.addEventListener("keyup", () => {
       if (!fromText.value) {
         toText.value = "";
       }
     });
 
+    // Handle translation when button is clicked
     translateBtn.addEventListener("click", () => {
       let text = fromText.value.trim();
       let translateFrom = selectTag[0].value;
@@ -53,44 +56,39 @@ const Translate = () => {
         .then((res) => res.json())
         .then((data) => {
           toText.value = data.responseData.translatedText;
-          data.matches.forEach((data) => {
-            if (data.id === 0) {
-              toText.value = data.translation;
+          data.matches.forEach((match) => {
+            if (match.id === 0) {
+              toText.value = match.translation;
             }
           });
           toText.setAttribute("placeholder", "Translation");
+        })
+        .catch(() => {
+          toText.setAttribute("placeholder", "Translation failed");
         });
     });
 
-    icons.forEach((icon)=>{
-        icon.addEventListener("click",({target})=>{
-            if(!fromText.value || !toText.value) return;
-            if(target.classList.contains("fa-copy")){
-                if(target.id=='from'){
-                    navigator.clipboard.writeText(fromText.value);
-                }else{
-                    navigator.clipboard.writeText(toText.value);
-                }
-            }else{
-                let utterance ;
-                if(target.id =='from'){
-                    utterance = new SpeechSynthesisUtterance(fromText.value);
-                    utterance.lang = selectTag[0].value;
-                }else{
-                    utterance = new SpeechSynthesisUtterance(toText.value);
-                    utterance.lang = selectTag[1].value;
-                }
-                speechSynthesis.speak(utterance);
-            }
-        });
+    // Handle icon click for copy and speech
+    icons.forEach((icon) => {
+      icon.addEventListener("click", ({ target }) => {
+        if (!fromText.value || !toText.value) return;
+        if (target.classList.contains("fa-copy")) {
+          navigator.clipboard.writeText(target.id === "from" ? fromText.value : toText.value);
+        } else if (target.classList.contains("fa-volume-up")) {
+          let utterance = new SpeechSynthesisUtterance(
+            target.id === "from" ? fromText.value : toText.value
+          );
+          utterance.lang = target.id === "from" ? selectTag[0].value : selectTag[1].value;
+          speechSynthesis.speak(utterance);
+        }
+      });
     });
   }, []);
 
   return (
-    <>
     <div className="translate-component">
       <div className="translation-container">
-        <div className="traslation-wrapper">
+        <div className="translation-wrapper">
           <div className="text-input">
             <textarea
               spellCheck="false"
@@ -98,7 +96,7 @@ const Translate = () => {
               placeholder="Enter text"
             ></textarea>
             <textarea
-              readOnly="true"
+              readOnly
               spellCheck="false"
               className="to-text"
               placeholder="Translation"
@@ -124,10 +122,9 @@ const Translate = () => {
             </li>
           </ul>
         </div>
-        <button>Translate Text</button>
+        <button className="translateBtn">Translate Text</button>
       </div>
-      </div>
-    </>
+    </div>
   );
 };
 

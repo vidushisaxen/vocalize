@@ -7,14 +7,15 @@ import Join from '../components/Join'
 import Languages from '../components/Languages'
 import Main from '../components/Main'
 import WhyUs from '../components/WhyUs'
+
 import React from 'react'
 
 
 const index = () => {
   return (
     <>
+     <Header/>
     <main>
-    <Header/>
     <Hero/>
     <Main/>
     <Info/>
@@ -22,8 +23,8 @@ const index = () => {
     <WhyUs/>
     <Join/>
     <Faq/>
-    <Footer/>
     </main>
+    <Footer/>
     </>
   )
 }

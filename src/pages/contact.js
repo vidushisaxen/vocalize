@@ -7,12 +7,12 @@ import ContactHero from '../components/ContactHero'
 const contact = () => {
   return (
     <>
-    <section className='contactContainer'>
     <Header/>
+    <main>
     <ContactHero/>
      <Contact/>
+     </main>
      <Footer/>
-     </section>
     </>
   
   )
