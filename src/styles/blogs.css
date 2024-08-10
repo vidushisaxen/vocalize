@@ -1,0 +1,126 @@
+
+.wrap{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  grid-gap:10px;
+  padding:0.5em;
+  perspective:500px;
+}
+.article {
+  display:flex;
+  flex-direction:column;
+  height:300px;
+  position:relative;
+  background-size:cover;
+  border-radius:7px;
+  overflow:hidden;
+  padding:1em;
+  cursor:pointer;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: all 0.2s linear ;
+  will-change: transform;
+}
+
+.article1{
+    background-image:url("https://aiworldschool.com/wp-content/uploads/2021/03/AI-for-LanguageLearning.png");
+}
+
+.article2{
+    background-image:url("https://i.pcmag.com/imagery/roundups/04R6IMsZbPKOGtR1G7U4ne2-2..v1651688497.webp");
+}
+.article3{
+  background-image:url("https://verbit.ai/wp-content/uploads/2023/08/shutterstock_1317865808-1024x683.jpg");
+}
+
+.article4{
+  background-image:url("https://www.transifex.com/wp-content/uploads/2022/08/Neural-Machine-Translation-featured.png");
+}
+.article5{
+  background-image:url("https://polyglotpal.co.uk/wp-content/uploads/2023/10/DALL%C2%B7E-2023-10-15-13.19.48-Illustration-of-a-brain-split-into-two-sections.-One-section-is-labeled-Language-Learning-and-has-symbols-of-books-charts-and-headphones.-The-othe-1024x585.png");
+}
+.article6{
+  background-image: url("https://media.licdn.com/dms/image/D5612AQHDzlYOpd2EBA/article-cover_image-shrink_720_1280/0/1709727453569?e=2147483647&v=beta&t=bC1qdgwQAL7oeBFALZKoI5u5sb939iO0rRTzIf0gENs");
+}
+
+
+.overlay {
+  width:100%;
+  height:100%;
+  background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.3) 20%,rgba(0,0,0,0.4) 50%);
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:1;
+}
+.article h1{
+  font-size:1.5em;
+  margin-top:auto;
+  cursor:pointer;
+  transition:all 0.3s;
+  position:relative;
+  z-index:2;
+  pointer-events:none;
+}
+
+.article h1{
+  transform:translateY(-20px)
+}
+.article h1 span{
+  color:#fff;
+}
+
+.article span.cat {
+  letter-spacing:2px;
+  font-weight:bold;
+  position:relative;
+  z-index:2;
+  pointer-events:none;
+  overflow:hidden;
+  color:#fff;
+}
+
+@media screen and (min-width:1000px){
+  .wrap{
+    grid-template-columns:repeat(auto-fit,minmax(400px,1fr));
+    grid-gap:20px;
+    padding:1em;
+  }
+  .article h1{
+    transform:translateY(0px);
+  }
+  .article:hover h1{
+  transform:translateY(-20px)
+  }
+  
+  .article span.cat {
+    color:transparent;
+  }
+  
+.article span.cat::before,.article span.cat::after{
+  content:attr(data-hover);
+  position:absolute;
+  display:inline-block;
+  left:0;
+  top:0;
+  white-space: nowrap;
+  overflow:hidden;
+  max-width:0%;
+  transition:max-width 300ms ease-out; 
+}
+.article span.cat::before {
+  color:yellow;
+  transition-delay:100ms;
+}
+.article span.cat::after {
+  color:white;
+}
+
+.article:hover span.cat:after,.article:hover span.cat:before{
+  max-width:100%;
+}
+
+.article:hover span.cat:after {
+  transition-delay:300ms;
+}
+}
+

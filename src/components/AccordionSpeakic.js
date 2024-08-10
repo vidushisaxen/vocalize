@@ -3,12 +3,12 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-  } from "@/components/ui/accordion";
+  } from "../components/ui/accordion";
   
   export function AccordionSpeakic() {
     return (
       
-      <section className="w-[40%] h-screen mobile:w-[95%] mobile:mt-[10vw] mobile:h-full tablet:w-[95%] tablet:mt-[10vw] tablet:h-full tablet:mb-[10vw]">
+      <section className="w-[40%] h-full mobile:w-[95%] mobile:mt-[10vw] mobile:h-full tablet:w-[95%] tablet:mt-[10vw] tablet:h-full tablet:mb-[10vw]">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className="faq-ques">

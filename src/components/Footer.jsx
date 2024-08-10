@@ -7,22 +7,6 @@ const Footer = () => {
     <>
     <section>
     <div className="footer-container">
-        <div className="top-footer">
-          <div className="footer-logo">
-            <img src="/icons/favicon.svg"  alt="icon"/>
-          </div>
-          <div className="footer-contact">
-            <p>
-              +44(0)333 090 7275
-              <span className="block footer-border"></span>
-            </p>
-
-            <p>
-              enquiries@speakic.com
-              <span className="block footer-border"></span>
-            </p>
-          </div>
-        </div>
         <hr></hr>
         <div className="bottom-footer">
           <div className="left-text">
@@ -163,12 +147,12 @@ const Footer = () => {
                 <li>
                   <span className="leading-[3vw] overflow-hidden nav-footer-link">
                     <span className="overflow-hidden flex flex-col gap-[0.8vw] h-[200%] -translate-y-1/2">
-                      <a href="#" className="fname">
+                      <Link href="https://vidushisaxena.netlify.app/" className="fname">
                         Vidushi Saxena
-                      </a>
-                      <a href="#" className="sname">
+                      </Link>
+                      <Link href="https://vidushisaxena.netlify.app/" className="sname">
                         Vidushi Saxena
-                      </a>
+                      </Link>
                     </span>
                   </span>
                 </li>

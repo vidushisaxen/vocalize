@@ -1,13 +1,16 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 import React from 'react'
+import Blogs from '../components/Blogs'
+import BlogsHero from '../components/BlogsHero'
 
 const blogs = () => {
   return (
     <>
     <section className='blogContainer'>
     <Header/>
-    <h1>Blogs</h1>
+    <BlogsHero/>
+   <Blogs/>
     <Footer/>
     </section>
     </>

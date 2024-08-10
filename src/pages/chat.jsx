@@ -1,17 +1,17 @@
+import Chat from '../components/Chat'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import React from 'react'
 
-const convert = () => {
-  return (
-   <>
-   <section className='convertContainer'>
-    <Header/>
-    <Footer/>
 
-   </section>
-   </>
+const chat = () => {
+  return (
+    <>
+    <Header/>
+  <Chat/>
+  <Footer/>
+  </>
   )
 }
 
-export default convert
+export default chat

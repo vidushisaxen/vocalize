@@ -1,13 +1,16 @@
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Footer from '../components/Footer'
+import Header from '../components/Header'
 import React from 'react'
+import Terms from '../components/Terms'
+import PrivacyHero from '../components/PrivacyHero'
 
 const terms = () => {
   return (
     <>
     <section className='termsContainer'>
         <Header/>
-        <h1>Terms and conditions</h1>
+        <PrivacyHero/>
+        <Terms/>
         <Footer/>
 
     </section>

@@ -41,7 +41,7 @@
 }
 .login-container button {
   background-color: #28BFD2;
-  color: #F4C951;
+  color: #FFF;
   font-size: 18px;
   padding: 8px 40px;
   border: 1px solid transparent;
@@ -57,7 +57,7 @@
   border-color: #fff;
 }
 .login-container form {
-  background-color: #D8EEFE;
+  background-color: #e11dff2c;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +123,7 @@
   margin: 20px 0;
 }
 .social-icons a {
-  border: 3px solid #28BFD2;
+  border: 3px solid #88038F;
   border-radius: 20%;
   display: inline-flex;
   justify-content: center;
