@@ -7,13 +7,12 @@ import PrivacyHero from '../components/PrivacyHero'
 const terms = () => {
   return (
     <>
-    <section className='termsContainer'>
         <Header/>
+        <main>
         <PrivacyHero/>
         <Terms/>
+        </main>
         <Footer/>
-
-    </section>
     </>
   )
 }

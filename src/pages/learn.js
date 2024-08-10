@@ -3,16 +3,17 @@ import Header from '../components/Header'
 import React from 'react'
 import Link from 'next/link'
 import Learn from '../components/learning/Learn'
+import LearnHero from '../components/learning/LearnHero'
 
 const learn = () => {
   return (
    <>
-   <section className='learnContainer'>
     <Header/>
-   {/* <Learn/> */}
+    <main>
+      <LearnHero/>
+   <Learn/>
+   </main>
     <Footer/>
-
-   </section>
    </>
   )
 }

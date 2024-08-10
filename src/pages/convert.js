@@ -1,3 +1,4 @@
+import ConversionHero from '../components/convert/ConversionHero'
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import React from 'react'
@@ -5,11 +6,11 @@ import React from 'react'
 const convert = () => {
   return (
    <>
-   <section className='convertContainer'>
     <Header/>
+    <main>
+      <ConversionHero/>
+    </main>
     <Footer/>
-
-   </section>
    </>
   )
 }

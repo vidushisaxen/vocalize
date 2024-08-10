@@ -7,12 +7,13 @@ import BlogsHero from '../components/BlogsHero'
 const blogs = () => {
   return (
     <>
-    <section className='blogContainer'>
     <Header/>
+    <main>
     <BlogsHero/>
    <Blogs/>
+   </main>
     <Footer/>
-    </section>
+    
     </>
   )
 }

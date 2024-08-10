@@ -8,7 +8,9 @@ const chat = () => {
   return (
     <>
     <Header/>
+    <main>
   <Chat/>
+  </main>
   <Footer/>
   </>
   )

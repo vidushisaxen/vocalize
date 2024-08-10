@@ -8,13 +8,14 @@ import TranslateHero from '../components/translate/TranslateHero'
 const translate = () => {
   return (
    <>
-   <section className='translateContainer'>
     <Header/>
+    <main>
     <TranslateHero/>
     <Translate/>
     <Join/>
+    </main>
     <Footer/>
-   </section>
+ 
    
    </>
   )
