@@ -14,7 +14,7 @@ const LearnHero = () => {
                   </span>
                   <br />
                   <span className="leading-[1.2] overflow-hidden">
-                  with Speakic's 
+                  with Speakic&apos;s 
                   </span>
                   <br/>
                   <span className="leading-[1.2] overflow-hidden">
