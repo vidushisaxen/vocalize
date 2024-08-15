@@ -127,9 +127,11 @@ const TextToSpeech = ({ text }) => {
 
       <br />
 
-      <button onClick={handlePlay}>{isPaused ? "Resume" : "Play"}</button>
-      <button onClick={handlePause}>Pause</button>
-      <button onClick={handleStop}>Stop</button>
+<div className="flex w-[30vw] items-center justify-between mt-[2vw]">
+      <button onClick={handlePlay} className="px-[30px] py-[10px] bg-[#88038F] border-[2px] border-[#88038F] text-[#fff] rounded-[10px]  hover:bg-[#FFF] hover:text-[#88038F]">{isPaused ? "Resume" : "Play"}</button>
+      <button onClick={handlePause} className="px-[30px] py-[10px] bg-[#88038F] border-[2px] border-[#88038F] text-[#fff] rounded-[10px]  hover:bg-[#FFF] hover:text-[#88038F]">Pause</button>
+      <button onClick={handleStop} className="px-[30px] py-[10px] bg-[#88038F] border-[2px] border-[#88038F] text-[#fff] rounded-[10px]  hover:bg-[#FFF] hover:text-[#88038F]">Stop</button>
+      </div>
     </div>
   );
 };

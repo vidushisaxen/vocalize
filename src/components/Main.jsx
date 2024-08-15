@@ -31,20 +31,20 @@ const Main = () => {
             <img src='/images/convert.avif' alt='main-img' className='rounded-[20px]'/>
         </div>
         <div className='flex flex-col w-[60%] items-center justify-between py-[2vw]' >
-            <h2 className='text-[3vw] font-medium '>Speech to Text Conversion</h2>
+            <h2 className='text-[3vw] font-medium ml-[10%] '>Speech to Text Conversion</h2>
             <p className='w-[80%]'>Whenever we are learning a new language, it means that we have started a new life with a different vision. If we learn a language, we understand much about culture or life of a country. If we know one language we are one person, if we know two languages, we are two people.</p>
         </div>
     </div>
     </Link>
 
-    <Link href="/">
-    <div className='maincard h-[40vw] w-[80%] flex flex-row items-center  justify-between px-[5vw]  mt-[10vw] py-[5vw]'>
+    <Link href="/convert">
+    <div className='maincard h-[40vw] w-[80%] flex flex-row-reverse items-center  justify-between px-[5vw]  mt-[10vw] py-[5vw]'>
         <div className='rounded'>
-            <img src='/images/convert.avif' alt='main-img' className='rounded-[20px]'/>
+            <img src='/images/tts.png' alt='main-img' className='rounded-[20px]'/>
         </div>
         <div className='flex flex-col w-[60%] items-center justify-between py-[2vw]' >
-            <h2 className='text-[3vw] font-medium '>Conversion</h2>
-            <p className='w-[80%]'>Whenever we are learning a new language, it means that we have started a new life with a different vision. If we learn a language, we understand much about culture or life of a country. If we know one language we are one person, if we know two languages, we are two people.</p>
+            <h2 className='text-[3vw] font-medium ml-[10%]'>Text To Speech Conversion</h2>
+            <p className='w-[80%]'>Our tool is designed to effortlessly convert text into natural, lifelike speech. Whether you're aiming to make content more accessible or prefer listening over reading, it provides seamless text-to-speech conversion with high-quality, customizable voices. Ideal for professionals, educators, and creators, it enhances communication by transforming written words into engaging audio experiences.</p>
         </div>
     </div>
     </Link>
