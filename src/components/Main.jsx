@@ -5,7 +5,7 @@ const Main = () => {
   return (
    <>
    <section className='w-screen mt-[10vw] flex flex-col items-center justify-between mb-[10vw]'>
-   <Link href="https://vocalize-learn.vercel.app/"> <div className='maincard h-[40vw] w-[80%] flex flex-row items-center  justify-between px-[5vw] py-[5vw] mt-[10vw]'>
+   <Link href="https://speakic-learn.vercel.app/"> <div className='maincard h-[40vw] w-[80%] flex flex-row items-center  justify-between px-[5vw] py-[5vw] mt-[10vw]'>
         <div className='rounded'>
             <img src='/images/learning.webp' alt='main-img' className='rounded-[20px]'/>
         </div>
