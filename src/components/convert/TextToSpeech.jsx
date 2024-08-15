@@ -9,55 +9,64 @@ const TextToSpeech = ({ text }) => {
   const [volume, setVolume] = useState(1);
 
   useEffect(() => {
-    const synth = window.speechSynthesis;
-    const u = new SpeechSynthesisUtterance(text);
-    setUtterance(u);
+    if (typeof window !== "undefined" && window.speechSynthesis) {
+      const synth = window.speechSynthesis;
+      const u = new SpeechSynthesisUtterance(text);
+      setUtterance(u);
 
-    // Add an event listener to the speechSynthesis object to listen for the voiceschanged event
-    synth.addEventListener("voiceschanged", () => {
-      const voices = synth.getVoices();
-      setVoice(voices[0]);
-    });
+      const voicesChangedHandler = () => {
+        const voices = synth.getVoices();
+        setVoice(voices[0]);
+      };
 
-    return () => {
-      synth.cancel();
-      synth.removeEventListener("voiceschanged", () => {
-        setVoice(null);
-      });
-    };
+      synth.addEventListener("voiceschanged", voicesChangedHandler);
+
+      return () => {
+        synth.cancel();
+        synth.removeEventListener("voiceschanged", voicesChangedHandler);
+      };
+    }
   }, [text]);
 
   const handlePlay = () => {
-    const synth = window.speechSynthesis;
+    if (typeof window !== "undefined" && window.speechSynthesis) {
+      const synth = window.speechSynthesis;
 
-    if (isPaused) {
-      synth.resume();
-    } else {
-      utterance.voice = voice;
-      utterance.pitch = pitch;
-      utterance.rate = rate;
-      utterance.volume = volume;
-      synth.speak(utterance);
+      if (isPaused) {
+        synth.resume();
+      } else {
+        utterance.voice = voice;
+        utterance.pitch = pitch;
+        utterance.rate = rate;
+        utterance.volume = volume;
+        synth.speak(utterance);
+      }
+
+      setIsPaused(false);
     }
-
-    setIsPaused(false);
   };
 
   const handlePause = () => {
-    const synth = window.speechSynthesis;
-    setIsPaused(true);
-    synth.pause();
+    if (typeof window !== "undefined" && window.speechSynthesis) {
+      const synth = window.speechSynthesis;
+      setIsPaused(true);
+      synth.pause();
+    }
   };
 
   const handleStop = () => {
-    const synth = window.speechSynthesis;
-    setIsPaused(false);
-    synth.cancel();
+    if (typeof window !== "undefined" && window.speechSynthesis) {
+      const synth = window.speechSynthesis;
+      setIsPaused(false);
+      synth.cancel();
+    }
   };
 
   const handleVoiceChange = (event) => {
-    const voices = window.speechSynthesis.getVoices();
-    setVoice(voices.find((v) => v.name === event.target.value));
+    if (typeof window !== "undefined" && window.speechSynthesis) {
+      const voices = window.speechSynthesis.getVoices();
+      setVoice(voices.find((v) => v.name === event.target.value));
+    }
   };
 
   const handlePitchChange = (event) => {
@@ -76,12 +85,14 @@ const TextToSpeech = ({ text }) => {
     <div>
       <label>
         Voice:
-        <select value={voice?.name} onChange={handleVoiceChange}>
-          {window.speechSynthesis.getVoices().map((voice) => (
-            <option key={voice.name} value={voice.name}>
-              {voice.name}
-            </option>
-          ))}
+        <select value={voice?.name || ""} onChange={handleVoiceChange}>
+          {typeof window !== "undefined" &&
+            window.speechSynthesis &&
+            window.speechSynthesis.getVoices().map((voice) => (
+              <option key={voice.name} value={voice.name}>
+                {voice.name}
+              </option>
+            ))}
         </select>
       </label>
 
@@ -127,10 +138,25 @@ const TextToSpeech = ({ text }) => {
 
       <br />
 
-<div className="flex w-[30vw] items-center justify-between mt-[2vw]">
-      <button onClick={handlePlay} className="px-[30px] py-[10px] bg-[#88038F] border-[2px] border-[#88038F] text-[#fff] rounded-[10px]  hover:bg-[#FFF] hover:text-[#88038F]">{isPaused ? "Resume" : "Play"}</button>
-      <button onClick={handlePause} className="px-[30px] py-[10px] bg-[#88038F] border-[2px] border-[#88038F] text-[#fff] rounded-[10px]  hover:bg-[#FFF] hover:text-[#88038F]">Pause</button>
-      <button onClick={handleStop} className="px-[30px] py-[10px] bg-[#88038F] border-[2px] border-[#88038F] text-[#fff] rounded-[10px]  hover:bg-[#FFF] hover:text-[#88038F]">Stop</button>
+      <div className="flex w-[30vw] items-center justify-between mt-[2vw]">
+        <button
+          onClick={handlePlay}
+          className="px-[30px] py-[10px] bg-[#88038F] border-[2px] border-[#88038F] text-[#fff] rounded-[10px]  hover:bg-[#FFF] hover:text-[#88038F]"
+        >
+          {isPaused ? "Resume" : "Play"}
+        </button>
+        <button
+          onClick={handlePause}
+          className="px-[30px] py-[10px] bg-[#88038F] border-[2px] border-[#88038F] text-[#fff] rounded-[10px]  hover:bg-[#FFF] hover:text-[#88038F]"
+        >
+          Pause
+        </button>
+        <button
+          onClick={handleStop}
+          className="px-[30px] py-[10px] bg-[#88038F] border-[2px] border-[#88038F] text-[#fff] rounded-[10px]  hover:bg-[#FFF] hover:text-[#88038F]"
+        >
+          Stop
+        </button>
       </div>
     </div>
   );
