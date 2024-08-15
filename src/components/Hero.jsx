@@ -109,58 +109,6 @@ function Hero() {
     >
         
     </video>
- <div className='text-container'> 
- <div className='hero-text'>
-    <h2 className='text-heading'>Get set for an electric future</h2>
-    </div>
-    {/* <div className='hero-button right-arrow-animate'>
-        
-        <button className='button1'><p>Our solutions</p>
-
-        <div className='flex w-10 yellow-circle'>
-            <span className='w-fit flex flex-row'>
-            <FaArrowRight width="10px" color='#000' className='right-first ml-3'/>
-            <FaArrowRight width="10px" color='#000'className='right-second ml-3' />
-            </span>
-        </div>
-
-        </button>
-    </div> */}
-
-{/* <div className='btn hero-button bg-white  w-[20vw] rounded-full relative h-[5vw] overflow-hidden'>
-                    <div className='custom bg-[#fff555] h-full w-full
-                    flex items-center justify-end 
-                    pr-[1.5vw] '>
-                        <span className='w-[1.6vw] overflow-hidden'>
-                        <span className='overflow-hidden flex flex-row gap-[.1vw] w-[200%] -translate-x-1/2'>
-                            <img src='/icons/arrowright.svg' className='farrow' alt="arrow"/>
-                            <img src='/icons/arrowright.svg' className='sarrow ' alt="arrow"/>
-                            
-                        </span>
-                        </span>
-
-                    </div>
-                    <p className='text-black text-lg absolute z-10 left-[2vw] top-1/2 -translate-y-1/2'>
-                        Our solutions
-                    </p>
-                </div>
-
-    <div className='hero-para'>
-        <p>Experts in smart </p>
-        <p>EV charging solutions</p>
-    </div>
-    <div className='explore-button arrow-animate'>
-        <button className='explore'>Explore</button>
-        <div className='flex overflow-hidden w-10 mt-6'>
-            <span className='w-fit flex gap-1 flex-col'>
-            <FaArrowDownLong width="10px" color='#fff'  className='first'/>
-            <FaArrowDownLong width="10px" color='#fff' className='second' />
-            </span>
-        </div>
-        
-    </div> */}
-    
-    </div>
     </div>
     
     </>
