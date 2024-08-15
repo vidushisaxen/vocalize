@@ -3,14 +3,14 @@ import React from "react";
 const LearningOptions = (props) => {
     const options = [
       {
-        text: "Javascript",
+        text: "Learning",
         handler: props.actionProvider.handleJavascriptList,
         id: 1,
       },
-      { text: "Data visualization", handler: () => {}, id: 2 },
-      { text: "APIs", handler: () => {}, id: 3 },
-      { text: "Security", handler: () => {}, id: 4 },
-      { text: "Interview prep", handler: () => {}, id: 5 },
+      { text: "Conversion", handler: () => {}, id: 2 },
+      { text: "Translation", handler: () => {}, id: 3 },
+      { text: "About", handler: () => {}, id: 4 },
+      { text: "Contact", handler: () => {}, id: 5 },
     ];
   
     const optionsMarkup = options.map((option) => (

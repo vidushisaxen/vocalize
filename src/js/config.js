@@ -7,16 +7,16 @@ import LinkList from "../components/LinkList";
 const config = {
   botName: "LearningBot",
   initialMessages: [
-    createChatBotMessage("Hi, I'm here to help. What do you want to learn?", {
+    createChatBotMessage("Hi, How may I help you with?", {
       widget: "learningOptions",
     }),
   ],
   customStyles: {
     botMessageBox: {
-      backgroundColor: "#376B7E",
+      backgroundColor: "#88038F",
     },
     chatButton: {
-      backgroundColor: "#376B7E",
+      backgroundColor: "#88038F",
     },
   },
   widgets: [
@@ -30,20 +30,20 @@ const config = {
       props: {
         options: [
           {
-            text: "Introduction to JS",
+            text: "Learning",
             url:
-              "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/",
+              "https://speakic-learn.vercel.app/",
             id: 1,
           },
           {
-            text: "Mozilla JS Guide",
+            text: "Conversion",
             url:
-              "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+              "https://speakicspeech.vercel.app/",
             id: 2,
           },
           {
-            text: "Frontend Masters",
-            url: "https://frontendmasters.com",
+            text: "Translation",
+            url: "https://speakic-translate.vercel.app/",
             id: 3,
           },
         ],

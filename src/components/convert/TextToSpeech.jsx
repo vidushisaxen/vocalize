@@ -138,7 +138,7 @@ const TextToSpeech = ({ text }) => {
 
       <br />
 
-      <div className="flex w-[30vw] items-center justify-between mt-[2vw]">
+      <div className="flex w-[30vw] items-center justify-between mt-[2vw] mobile:gap-[20px] mobile:mt-[40px]">
         <button
           onClick={handlePlay}
           className="px-[30px] py-[10px] bg-[#88038F] border-[2px] border-[#88038F] text-[#fff] rounded-[10px]  hover:bg-[#FFF] hover:text-[#88038F]"
