@@ -44,15 +44,15 @@ function Header() {
                       Blogs
                     </Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link
-                      href="/login"
+                      href="/chat"
                       className="text-[#363636]  transition-all duration-500"
                     >
-                      Login
+                      Help
                     </Link>
                   </li>
-                   */}
+                  
                 </ul>
             </div>
             <Link href="/contact">

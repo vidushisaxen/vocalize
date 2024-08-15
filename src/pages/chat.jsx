@@ -1,17 +1,15 @@
 import Chat from '../components/Chat'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
 import React from 'react'
 
 
 const chat = () => {
   return (
     <>
-    <Header/>
-    <main>
+   
+    <main className='flex items-center justify-center mt-[5vw]'>
   <Chat/>
   </main>
-  <Footer/>
+ 
   </>
   )
 }
