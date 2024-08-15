@@ -44,7 +44,7 @@ const Main = () => {
         </div>
         <div className='flex flex-col w-[60%] items-center justify-between py-[2vw]' >
             <h2 className='text-[3vw] font-medium ml-[10%]'>Text To Speech Conversion</h2>
-            <p className='w-[80%]'>Our tool is designed to effortlessly convert text into natural, lifelike speech. Whether you're aiming to make content more accessible or prefer listening over reading, it provides seamless text-to-speech conversion with high-quality, customizable voices. Ideal for professionals, educators, and creators, it enhances communication by transforming written words into engaging audio experiences.</p>
+            <p className='w-[80%]'>Our tool is designed to effortlessly convert text into natural, lifelike speech. Whether you&apos;re aiming to make content more accessible or prefer listening over reading, it provides seamless text-to-speech conversion with high-quality, customizable voices. Ideal for professionals, educators, and creators, it enhances communication by transforming written words into engaging audio experiences.</p>
         </div>
     </div>
     </Link>
