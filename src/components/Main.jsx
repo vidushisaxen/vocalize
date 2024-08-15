@@ -15,7 +15,7 @@ const Main = () => {
         </div>
     </div>
     </Link>
-   <Link href="/"> <div className='maincard h-[40vw] w-[80%] flex flex-row-reverse items-center  justify-between px-[5vw] py-[5vw] mt-[10vw]'>
+   <Link href="https://speakic-translate.vercel.app/"> <div className='maincard h-[40vw] w-[80%] flex flex-row-reverse items-center  justify-between px-[5vw] py-[5vw] mt-[10vw]'>
         <div className='rounded w-[70%]'>
             <img src='/images/translate.png' alt='main-img' className='rounded-[20px]'/>
         </div>
