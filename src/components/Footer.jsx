@@ -118,10 +118,10 @@ const Footer = () => {
                 <li>
                   <span className="leading-[3vw] overflow-hidden nav-footer-link">
                     <span className="overflow-hidden flex flex-col gap-[0.8vw] h-[200%] -translate-y-1/2">
-                      <a href="/" className="fname">
+                      <a href="#" className="fname">
                         Helpbooks
                       </a>
-                      <a href="/" className="sname">
+                      <a href="#" className="sname">
                         Helpbooks
                       </a>
                     </span>
@@ -135,10 +135,10 @@ const Footer = () => {
                 <li>
                 <span className="leading-[3vw] overflow-hidden nav-footer-link">
                     <span className="overflow-hidden flex flex-col gap-[0.8vw] h-[200%] -translate-y-1/2">
-                      <a href="/" className="fname">
+                      <a href="#" className="fname">
                         Shivanshika Agarwal
                       </a>
-                      <a href="/" className="sname">
+                      <a href="#" className="sname">
                         Shivanshika Agarwal
                       </a>
                     </span>
