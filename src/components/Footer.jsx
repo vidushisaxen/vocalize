@@ -82,10 +82,10 @@ const Footer = () => {
                 <li>
                 <span className="leading-[3vw] overflow-hidden nav-footer-link">
                     <span className="overflow-hidden flex flex-col gap-[0.8vw] h-[200%] -translate-y-1/2">
-                      <Link href="/learn" className="fname">
+                      <Link href="https://speakic-learn.vercel.app/" className="fname">
                         Learning
                       </Link>
-                      <Link href="/learn" className="sname">
+                      <Link href="https://speakic-learn.vercel.app/" className="sname">
                         Learning
                       </Link>
                     </span>
@@ -94,10 +94,10 @@ const Footer = () => {
                 <li>
                   <span className="leading-[3vw] overflow-hidden nav-footer-link">
                     <span className="overflow-hidden flex flex-col gap-[0.8vw] h-[200%] -translate-y-1/2">
-                      <Link href="/convert" className="fname">
+                      <Link href="https://speakicspeech.vercel.app/" className="fname">
                         Conversion
                       </Link>
-                      <Link href="/convert" className="sname">
+                      <Link href="https://speakicspeech.vercel.app/" className="sname">
                         Conversion
                       </Link>
                     </span>
@@ -106,10 +106,10 @@ const Footer = () => {
                 <li>
                   <span className="leading-[3vw] overflow-hidden nav-footer-link">
                     <span className="overflow-hidden flex flex-col gap-[0.8vw] h-[200%] -translate-y-1/2">
-                      <Link href="/translate" className="fname">
+                      <Link href="https://speakic-translate.vercel.app/" className="fname">
                        Translating
                       </Link>
-                      <Link href="/translate" className="sname">
+                      <Link href="https://speakic-translate.vercel.app/" className="sname">
                        Translating
                       </Link>
                     </span>
@@ -118,10 +118,10 @@ const Footer = () => {
                 <li>
                   <span className="leading-[3vw] overflow-hidden nav-footer-link">
                     <span className="overflow-hidden flex flex-col gap-[0.8vw] h-[200%] -translate-y-1/2">
-                      <a href="#" className="fname">
+                      <a href="/" className="fname">
                         Helpbooks
                       </a>
-                      <a href="#" className="sname">
+                      <a href="/" className="sname">
                         Helpbooks
                       </a>
                     </span>
@@ -135,10 +135,10 @@ const Footer = () => {
                 <li>
                 <span className="leading-[3vw] overflow-hidden nav-footer-link">
                     <span className="overflow-hidden flex flex-col gap-[0.8vw] h-[200%] -translate-y-1/2">
-                      <a href="#" className="fname">
+                      <a href="/" className="fname">
                         Shivanshika Agarwal
                       </a>
-                      <a href="#" className="sname">
+                      <a href="/" className="sname">
                         Shivanshika Agarwal
                       </a>
                     </span>
